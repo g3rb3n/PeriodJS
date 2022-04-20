@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "period",
+  "name": "period-es6",
   "version": "0.0.1",
   "devDependencies": {
     "@babel/core": "^7.17.9",
