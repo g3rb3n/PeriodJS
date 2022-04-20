@@ -53,12 +53,12 @@ describe('Period', () => {
       assert.throws(() => b.overlap(a), Error);
     });
   });
-  describe('#isConsequtive()', () => {
+  describe('#isConsecutive()', () => {
     it('should only return true if b follows a', function () {
       let a = new Period(new Date('2022-04-16T00:00:00.000Z'), new Date('2022-04-16T01:00:00.000Z'));
       let b = new Period(new Date('2022-04-16T01:00:00.000Z'), new Date('2022-04-16T02:00:00.000Z'));
-      assert.equal(a.isConsequtive(b), true);
-      assert.equal(b.isConsequtive(a), false);
+      assert.equal(a.isConsecutive(b), true);
+      assert.equal(b.isConsecutive(a), false);
     });
   });
   describe('#join()', () => {

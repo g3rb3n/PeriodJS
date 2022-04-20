@@ -16,5 +16,20 @@
     "test": "c8 mocha",
     "lint": "npx eslint */*.js"
   },
-  "exports": "./src/Period.js"
+  "exports": "./src/Period.js",
+  "license" : "MIT",
+  "author": {
+    "name" : "Gerben",
+    "email" : "info@gerbenvaneerten.nl",
+    "url" : "https://gerbenvaneerten.nl/"
+  },
+  "homepage": "https://github.com/g3rb3n/PeriodJS#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/g3rb3n/PeriodJS.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/g3rb3n/PeriodJS/issues",
+    "email" : "info@gerbenvaneerten.nl"
+  }
 }

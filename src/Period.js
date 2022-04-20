@@ -16,11 +16,11 @@ export class Period {
     let till = (this.till < that.till) ? this.till : that.till;
     return new Period(from, till);
   }
-  isConsequtive(that) {
+  isConsecutive(that) {
     return this.till.getTime() == that.from.getTime();
   }
   join(that) {
-    if (!this.isConsequtive(that)) throw new Error(`${this} is not followed by ${that}`);
+    if (!this.isConsecutive(that)) throw new Error(`${this} is not followed by ${that}`);
     return new Period(this.from, that.till);
   }
   equals(that) {
@@ -83,7 +83,7 @@ export class Period {
         merged = period;
         continue;
       }
-      if (merged.isConsequtive(period)){
+      if (merged.isConsecutive(period)){
         merged = merged.join(period);
         continue;
       }
